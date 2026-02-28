@@ -130,8 +130,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         messageDiv.classList.remove("hidden");
         setTimeout(() => messageDiv.classList.add("hidden"), 5000);
-      } catch (err) {
-        console.error("Error removing participant:", err);
+        } catch (err) {
+          console.error("Error removing participant:", err);
+        }
       }
-    }
+    });
   });
